@@ -101,15 +101,10 @@ platform :ios do
 
   lane :set_up_code_signing do |readonly: true|
     set_up_code_signing_app_store(readonly: readonly)
-    set_up_code_signing_deveploment(readonly: readonly)
   end
 
   lane :set_up_code_signing_app_store do |readonly: true|
     set_up_code_signing(type: 'appstore', readonly: readonly)
-  end
-
-  lane :set_up_code_signing_deveploment do |readonly: true|
-    set_up_code_signing(type: 'development', readonly: readonly)
   end
 end
 
