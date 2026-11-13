@@ -2,7 +2,7 @@ steps:
   - label: Build and Upload to TestFlight
     command: .buildkite/commands/build-and-upload-to-testflight.sh
     plugins:
-      - automattic/a8c-ci-toolkit#3.4.2
+      - automattic/a8c-ci-toolkit#7.1.1
       - automattic/nvm#0.3.0
     agents:
       queue: mac
