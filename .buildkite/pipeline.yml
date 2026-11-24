@@ -1,6 +1,6 @@
 steps:
-  - label: Build and Upload to TestFlight
-    command: .buildkite/commands/build-and-upload-to-testflight.sh
+  - label: Validate Ruby 3.4 + Xcode 27.2 build (no TestFlight upload)
+    command: .buildkite/commands/validate-ruby-3.4-xcode-27.2.sh
     plugins:
       - automattic/a8c-ci-toolkit#8.0.1
       - automattic/nvm#0.3.0
@@ -10,5 +10,4 @@ steps:
       IMAGE_ID: xcode-27.2-v3
     artifact_paths:
       - "build/*.ipa"
-      - "build/*.app.dSYM.zip"
       - "build/*.pkg"
