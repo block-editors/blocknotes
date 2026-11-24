@@ -7,7 +7,7 @@ steps:
     agents:
       queue: mac
     env:
-      IMAGE_ID: xcode-15.4
+      IMAGE_ID: xcode-27.2-v3
     artifact_paths:
       - "build/*.ipa"
       - "build/*.app.dSYM.zip"
